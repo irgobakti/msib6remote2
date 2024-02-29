@@ -1,0 +1,63 @@
+*{  /* Universal memungkinkan semua tag yang ada diddalam html terpengaruh dengan css universal */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; /* posisi tulisan ke kiri */
+}
+
+.header{
+    background-image: url('../img/header4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    /* width: 100%; */
+     background-size: cover; 
+    text-align: center ;
+    color: white;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center; 
+}
+
+.navbar a{
+    float: left;
+    text-decoration: none; /* menghilangkan garis tulisan*/
+    padding: 14px 16px;
+    text-align: center;
+    /* margin: 30px; */
+
+}
+
+.navbar a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.column.side{
+    width: 25%;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both; /* memperbaiki penjajaran elemen */
+} 
+ .footer{
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+ }

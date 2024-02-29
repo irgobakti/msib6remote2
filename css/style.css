@@ -1,0 +1,91 @@
+/* 1.Selector Group & Tag tunggal */
+p{
+    color: whitesmoke;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14pt;
+}
+
+body{
+    text-align: center;
+    /* background-color: aquamarine; */
+    background-image: url('../img/back1.png');
+    background-repeat: no-repeat; /* Gambar Tidak berulang */
+    background-size: cover;
+    
+}
+
+fieldset, legend{
+    border-width: 3px;
+    border-color:rgb(143, 134, 134);
+    border-radius: 30px;
+}
+
+legend{
+    padding: 10px;
+    background-color: #fefbea;
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+   
+      
+}
+
+ol{
+    color: whitesmoke;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12pt;
+}
+
+table{
+    border: 10px;
+    margin:auto
+}
+
+td, th{
+    padding: 5px;
+    border: 1px solid white;
+}
+
+tr:hover{
+    background-color: white;
+    color: red;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+
+/* contoh selector id */
+/* #paragraph{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color:white;
+} */
+
+/* id yang dikhususkan tag li  */
+/* li#paragraph{ 
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color:aqua;
+}*/
+a.item:link, a.item:visited, a.item:active{
+    text-decoration: none; /*menghilangkan garis pada link */
+    list-style: none; /* menghilangkan titik pada list */
+    display: block; /* memblock a sebagai blcok */
+    float: left;  /*memposisikan a untuk ke bagiann kiri */
+      padding: 2px 3px; /*memberi jarak dan membentuk persegi */
+      background-color: white ; /* mewarnai Block */
+}
+
+footer{
+    color: white ;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+
+}
