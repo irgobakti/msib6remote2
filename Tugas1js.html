@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 Javascript</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        let nama="Ridwan";
+        let jabatan="Manager";
+        let gajiPokok="";
+        
+
+        if(jabatan =>"Manager"){ 
+            gajiPokok     = 15000000; 
+        }
+        else if (jabatan => "Asisten Manager") {  
+            gajiPokok     =  10000000;  
+        }
+        else if(jabatan => staff){
+            gajiPokok = 5000000;
+        }
+        else {
+            gajiPokok=0;
+        }
+
+        let  totalGaji = gajiPokok * 15;
+        let tunjanganBPJS = gajiPokok * 10; 
+        
+    </script>
+</head>
+<body>
+    <form action="">
+        <h1>Data Pegawai</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>NIP</th>
+                    <th>Jabatan</th>
+                    <th>Bulan Gaji</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ridwan</td>
+                    <td>K-004</td>
+                    <td>Manager</td>
+                    <td>Januari 2024</td>
+                    <td>Menikah</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="5">PENDAPATAN (Rp)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Gaji</td>
+                    <td colspan="3" align="right">15.000.000</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th colspan="5">POTONGAN (Rp)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Tuunjagan Jabatan</td>
+                    <td colspan="3" align="right"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tunjangan BPJS</td>
+                    <td colspan="3" align="right"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tunjangan Keluarga</td>
+                    <td colspan="3" align="right"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Gaji Kotor</th>
+                    <td colspan="3" align="right">
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
