@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hendler</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <h2>Letakkan Kursor ke masing-masing div </h2>
+    <div id="div1">
+        Burung Enggang
+    </div>
+
+    <div id="div2">
+        CAT
+    </div>
+
+    <div id="div3">
+        WOlF
+    </div>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+    $("document").ready(function(){ 
+        $("#div1").mouseover(function(){
+            $(this).css({
+             background: "url('https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/06/21/foto-content-79-Abram-Arifin-4140563173.png')"
+            });
+        });
+        $("div").mouseout(function() { 
+            $(this).css({
+                background: "blue"
+            });
+        }); 
+
+        $("#div2").mouseover(function(){
+            $(this).css({
+             background: "url('https://cdn.idntimes.com/content-images/community/2020/08/kirara38-copy-940x529-64534d25e7f06a63bca6e70ff9b58e50_600x400.jpg')"
+            });
+        });
+
+        $("#div3").mouseover(function(){
+            $(this).css({
+             background: "url('https://img.lovepik.com/bg/20240125/Captivating-Wolf-Image-Enigmatic-Smoke-Filled-Background_3044565_wh860.jpg!/fw/860')"
+            });
+        });
+    }); 
+
+</script>
+    
+    
+</body>
+</html>
